@@ -9,6 +9,6 @@
 
  :package: nova funcionalidade
  :up: atuliazação
- :beatles: correção de bug
+ :beetle: correção de bug
  :checkered_flag: release
 
