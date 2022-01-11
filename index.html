@@ -1,60 +1,188 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <title>Portfólio</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="imagens/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imagens/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="imagens/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <title>Portfólio</title>
+</head>
 
-    <body>
+<body>
 
-        <div class="container">
+    <div class="container">
 
-            <div class="hamburguer">
-                <div class="line" id="line1"></div>
-                <div class="line" id="line2"></div>
-                <div class="line" id="line3"></div>
-                <span>fechar</span>
-            </div>
-
-            <header>
-                <div class="img-wrapper">
-                    <img src="imagens/bg2.jpg" alt="">
-                </div>
-                <div class="banner">
-                    <h1>Web Developer & Front End Desinger</h1>
-                    <p>Leticia Farias</p>
-                    <button>Saiba mais</button>
-                </div>
-            </header>
-
-            <!--MENU LATERAL A SEGUIR-->
-            <div class="sidebar">
-                <nav>
-                    <ul class="menu">
-                        <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                        <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
-                    </ul>
-                </nav>
-                <div class="social-media">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-            </div>
-
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>fechar</span>
         </div>
 
-    </body>
+        <header>
+            <div class="img-wrapper">
+                <img src="imagens/bg2.jpg" alt="">
+            </div>
+            <div class="banner">
+                <h1>Web Developer & Front End Desinger</h1>
+                <p>Leticia Farias</p>
+                <button>Saiba mais</button>
+            </div>
+        </header>
+
+        <!--MENU LATERAL A SEGUIR-->
+        <aside class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Projetos</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Orçamento</a></li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </aside>
+
+        <!--Para formar toda a parte de section pode ser feito da seguinte forma 
+                "section.sessao-conhecimentos>(.sessao-header>h1)+.conhecimentos>(.conhecimento>(.conhecimento-header>i.fab+h3).conhecimento-text>p{lorem30})*6"-->
+
+        <section class="sessao-conhecimentos">
+            <div class="sessao-header">
+                <h1>Conhecimentos</h1>
+            </div>
+            <div class="conhecimentos">
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-html5"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <!-- <div class="conhecimento-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci officiis aliquam
+                            consectetur id molestias repudiandae, veniam ipsa explicabo exercitationem! Ab ducimus
+                            pariatur culpa et ullam asperiores dolorum architecto odit ea!</p>
+                    </div> -->
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <!-- <div class="conhecimento-text">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, quibusdam libero commodi
+                            et consequuntur mollitia, ipsa id, minima iste est labore voluptatum necessitatibus dolor
+                            unde earum explicabo minus ipsum accusantium!</p>
+                    </div> -->
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fas fa-pencil-alt"></i>
+                        <h3>Desing</h3>
+                    </div>
+                    <!-- <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non consectetur vero inventore
+                            illo voluptatum! Reprehenderit quia quas aut ducimus quos? Corrupti asperiores animi
+                            expedita fuga fugiat magnam modi dolorem.</p>
+                    </div> -->
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-js"></i>
+                        <h3>Javascript</h3>
+                    </div>
+                    <!-- <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non consectetur vero inventore
+                            illo voluptatum! Reprehenderit quia quas aut ducimus quos? Corrupti asperiores animi
+                            expedita fuga fugiat magnam modi dolorem.</p>
+                    </div> -->
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <!-- <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non consectetur vero inventore
+                            illo voluptatum! Reprehenderit quia quas aut ducimus quos? Corrupti asperiores animi
+                            expedita fuga fugiat magnam modi dolorem.</p>
+                    </div> -->
+                </div>
+                <div class="conhecimento">
+                    <div class="conhecimento-header">
+                        <i class="fab fa-github"></i>
+                        <h3>Git e GitHub</h3>
+                    </div>
+                    <!-- <div class="conhecimento-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi non consectetur vero inventore
+                            illo voluptatum! Reprehenderit quia quas aut ducimus quos? Corrupti asperiores animi
+                            expedita fuga fugiat magnam modi dolorem.</p>
+                    </div> -->
+                </div>
+                <div class="conhecimentos-img-wrapper">
+                    <img src="imagens/conhecimentos.png" alt="imagem conhecimento">
+                </div>
+            </div>
+        </section>
+
+        <!--<section class="sessao-projetos">
+            <div class="sessao-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="card">
+                    <div class="card-img-wrapper">
+                        <img src="imagens/tarefa1.jpg" alt="imagem do projeto toDo">
+                    </div>
+                    <div class="card-info">
+                        <h2>ToDo List</h2>
+                        <h3>Javascript</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum fugiat praesentium
+                            ducimus? Sapiente cumque alias unde impedit ipsum dolor, rerum voluptatibus quia suscipit
+                            laboriosam hic consectetur ea libero non?</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card"></div>
+                    <div class="card-img-wrapper">
+                        <img src="imagens/tarefa2.jpg" alt="imagem do projeto Maratona">
+                    </div>
+                    <div class="card-info">
+                        <h2>Maratona</h2>
+                        <h3>HTML, CSS</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum fugiat praesentium
+                            ducimus? Sapiente cumque alias unde impedit ipsum dolor, rerum voluptatibus quia suscipit
+                            laboriosam hic consectetur ea libero non?</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+                <div class="card"></div>
+                    <div class="card-img-wrapper">
+                        <img src="imagens/tarefa3.jpg" alt="imagem do projeto casa bela">
+                    </div>
+                    <div class="card-info">
+                        <h2>Casa Bela</h2>
+                        <h3>HTML</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas ipsum fugiat praesentium
+                            ducimus? Sapiente cumque alias unde impedit ipsum dolor, rerum voluptatibus quia suscipit
+                            laboriosam hic consectetur ea libero non?</p>
+                        <button>Saiba Mais</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>-->
+
+    </div>
+
+</body>
 
 <script src="script.js"></script>
 
